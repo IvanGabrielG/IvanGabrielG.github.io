@@ -1,0 +1,49 @@
+
+body{
+    background-color: #a39f9f;
+    margin:0;
+    padding:0;
+    font-size:large;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#foto-CV{
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+}
+
+.info-contacto{
+    left: 90%;
+    font-style: italic;
+}
+
+.presentacion{
+    background-color: rgb(194, 200, 207);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.personal-central{
+    left: 40%;
+    text-align: center;
+}
+
+.bloq-desc,.habilidades,.desc-personal{
+    text-align: center;
+}
+
+#info,#info1,#info2{
+    display:none;
+}
+
+#info1 p{
+    text-align: center;
+}
+
+.lista-habilidades{
+    list-style: none;
+}
+
+
