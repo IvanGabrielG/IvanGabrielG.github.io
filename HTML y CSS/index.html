@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Da información al navegador de la versión de HTML que estamos utilizando-->
+
+<!--Todas las modificaciones que se hacen con las herramientas de desarrollador del navegador son temporales y sirven como prueba, pero no modifican el código fuente en el que se está elaborado originalmente la página.
+Google es responsive, es decir, adapta el formato de las páginas según el dispositivo desde el que lo visite el usuario.-->
+
+<html lang="es"> <!--Permite que el navegador le de al usuario la opción de traducción automática-->
+
+    <head>
+     <meta charset="UTF-8"> <!--Define diccionario, caracteres especiales y acentos de la lengua-->
+    <meta name="viewport" content="width=device-width"> <!--Esto da el diseño responsive-->
+    
+        <title>Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <!--3 formas de modificar atributos de estilo a las etiquetas: in-line, como aparece en h1, con una etiqueta <style> en head, y con un archivo aparte style.css, siendo esta última la más usada-->
+    <body>
+
+        <header>
+            <div class="caja">
+              <!--Se utiliza h1 a pesar de ser una imagen porque permite darle la importancia que representa, siendo esta imagen el logo principal-->
+              <h1>
+                  <img src="imagenes/logo.png">
+              </h1>
+              <nav>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="productos.html">Productos</a></li>
+                      <li><a href="contacto.html">Contacto</a></li>
+                  </ul>
+              </nav>
+          </div>
+          </header>
+
+        <img class ="banner" src="banner/banner.jpg"> <!--Usamos ID para comportamientos y CLASS para estilos. Es una convención-->
+    <main>
+        <section class="principal"> <!--Div ayuda al manetenimiento, separando bloques de contenido. Section separa por secciones de manera semántica, indica que bloque de contenido tiene un contenido que está relacionado entre sí-->
+            <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+
+            <img class="utensilios" src="imagenes/utensilios[1].jpg" alt="Utensilios de un barbero">
+
+            <p> Ubicada en el corazón de la ciudad, la <strong>Barbería Alura </strong>trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
+
+            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+
+            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+        </section>
+
+        <section class="mapa">
+            <h3 class="titulo-principal"> Nuestra ubicación</h3>
+            <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+            <div class="mapa-contenido">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.6358437633453!2d-66.3391292095184!3d-33.30218868096123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x356a3d4d0fcd841e!2sPLAZA%20PRINGLES!5e0!3m2!1ses-419!2sar!4v1656906942920!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--La etiqueta ¡frame para crear ventanas con contenidos gráficos como videos, gifs, etc-->
+            </div>
+        </section>
+
+        
+        <section class="diferenciales">
+        
+            <h3 class="titulo-principal">Diferenciales</h3>
+            <div class="contenido-diferenciales">
+                <ul class="lista-diferenciales">
+                    <li class="items">Atención personalizada a los clientes.</li>
+                    <li class="items">Equipo distinguido.</li>
+                    <li class="items">Localización </li>
+                    <li class="items">Profesionales  calificados</li>
+                    <li class="items">Puntualidad</li>
+                    <li class="items">Limpieza</li>
+                </ul><img src="Diferenciales/diferenciales.jpg" class="imagen-diferenciales">
+            </div>
+
+            <div class="video">
+                <iframe width="auto" height="315" src="https://www.youtube.com/embed/-SV92V2C6Bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        </section>
+
+        
+    </main>
+    <footer>
+        <img src="imagenes/logo-blanco.png">
+        <p class="copyright">&copy Copyright barbería alura - 2022 </p>  <!-- Se usa UNICODE para caracteres especiales -->
+    </footer>   
+    </body>
+</html>
